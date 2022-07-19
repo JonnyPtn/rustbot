@@ -41,7 +41,7 @@ async def record(ctx):
         minutes = record_seconds // 60
         if days >= 1:
             await ctx.send(f"The longest time without mentioning rust is {days} day{'s' if days > 1 else ''}")
-        if hours >= 1:
+        elif hours >= 1:
             await ctx.send(f"The longest time without mentioning rust is {hours} hour{'s' if hours > 1 else ''}")
         elif minutes >= 1:
             await ctx.send(f"The longest time without mentioning rust is {minutes} minute{'s' if minutes > 1 else ''}")
